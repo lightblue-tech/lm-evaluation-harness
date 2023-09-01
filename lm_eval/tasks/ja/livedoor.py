@@ -74,7 +74,7 @@ class Livedoor(Task):
         self.jasquad_metric = datasets.load_metric(jasquad.__file__)
 
     def has_training_docs(self):
-        return True
+        return False
     
     def has_validation_docs(self):
         return True
