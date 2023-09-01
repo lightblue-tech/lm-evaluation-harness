@@ -65,6 +65,8 @@ from .ja import jaqket_v1
 from .ja import jaqket_v2
 from .ja import mgsm
 
+from .ja import livedoor
+
 ########################################
 # Translation tasks
 ########################################
@@ -325,6 +327,8 @@ TASK_REGISTRY = {
     # JGLUE
     "jsquad": jsquad.JSQuAD,
     **jsquad.construct_tasks(),
+    "livedoor": livedoor.Livedoor,
+    **livedoor.construct_tasks(),
     "jaquad": jaquad.JaQuAD,
     **jaquad.construct_tasks(),
     "jcommonsenseqa": jcommonsenseqa.JCommonsenseQA,
